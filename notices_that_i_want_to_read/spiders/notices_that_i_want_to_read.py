@@ -6,7 +6,7 @@ from scrapy import Spider
 
 class notices_that_i_want_to_read(Spider):
     name = 'notices_that_i_want_to_read'
-    start_urls = ['https://g1.globo.com/economia/tecnologia/']
+    start_urls = ['https://g1.globo.com/economia/tecnologia/','https://g1.globo.com/mundo/','https://g1.globo.com/olha-que-legal/']
 
     def parse(self, response):
         table_with_notices = response.xpath("//a[contains(@class, 'feed-post-link')]")
